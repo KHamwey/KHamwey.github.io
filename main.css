@@ -18,7 +18,7 @@ h2 {
 }
 
 /* This just centers the header container vertically on the page. */
-/*.container-fluid {
+.container-fluid {
 	height: 200px;
 	width: 100%;
 	
@@ -28,7 +28,7 @@ h2 {
 	left: 0;
 	right: 0;
 	margin: auto;
-}*/
+}
 
 /* Styling for icons. */
 .fa {
