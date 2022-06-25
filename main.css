@@ -46,8 +46,8 @@ h2 {
   }
 
   .css-shadow {
-	width: 75px;
-	height: 75px;
+	width: 275px;
+	height: 275px;
 	border-radius: 50%;
 	border: 2px solid #0dcaf0;
 	filter: drop-shadow(0 0 8px #adb5bd);
