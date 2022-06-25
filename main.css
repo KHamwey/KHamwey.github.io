@@ -19,8 +19,11 @@ h2 {
 
 /* This just centers the header container vertically on the page. */
 .container-fluid {
-	top:0;
-	bottom: 0;
+	
+	position: relative;
+	z-index: 100;
+	top:10;
+	bottom: 10;
 	left: 0;
 	right: 0;
 	margin: auto;
