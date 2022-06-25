@@ -46,6 +46,7 @@ h2 {
   }
 
   .css-shadow {
+	padding-left: 30px;
 	width: 275px;
 	height: 275px;
 	border-radius: 50%;
