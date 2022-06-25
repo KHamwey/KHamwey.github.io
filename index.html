@@ -28,7 +28,20 @@
         }
       }
 
+      .grid-container-element { 
+          display: grid; 
+          grid-template-columns: 1fr 1fr; 
+          grid-gap: 20px; 
+          border: 1px solid black; 
+          width: 50%; 
+      } 
+      .grid-child-element { 
+          margin: 10px; 
+          border: 1px solid red; 
+      }
+
       .avatar {
+        padding-left: 1px;
         width: 225px;
         height: 225px;
         border-radius: 50%;
@@ -137,39 +150,45 @@
       </form>
   </nav>
 
-  <div class="container-sm">
+  <div class="grid-container-element">
+    <div class="grid-child-element purple">
       <div class="avatar"><img src="images\Pic Final.PNG" alt="Kyle Hamwey" /></div>
-  </div>
+  
 
-  <div class="container-xl">
-      <div class="card-group" style="max-width: 18rem;">
-        <div class="card">
-          <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
-          <div class="card-body">
-            <h5 class="card-title">Engineering Skills</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="grid-child-element green">
+          <div class="card-group" style="max-width: 18rem;">
+            <div class="card">
+              <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+              <div class="card-body">
+                <h5 class="card-title">Engineering Skills</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-network-wired fa-flip" style="--fa-beat-scale: 2.0;"></i>
+              <div class="card-body">
+                <h5 class="card-title">I.T. Managment & Infrasctructure Skills</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-bell fa-shake"></i>
+              <div class="card-body">
+                <h5 class="card-title">Self & Time Management</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-network-wired fa-flip" style="--fa-beat-scale: 2.0;"></i>
-          <div class="card-body">
-            <h5 class="card-title">I.T. Managment & Infrasctructure Skills</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-bell fa-shake"></i>
-          <div class="card-body">
-            <h5 class="card-title">Self & Time Management</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
       </div>
-  </div>
-          <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+    </div>  
+</div>        
+
+
+
+        <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
           <h3>Engineering Skills</h3>
         </div>
 
@@ -204,6 +223,7 @@
             <div class="icons">
 
                   <a href="mailto:<hamweykyle@ymail.com>">
+
                     <i class="fa fa-envelope" title="Email"></i>
                   </a>
                   <a href="https://github.com/KHamwey">
