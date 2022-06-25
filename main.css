@@ -1,5 +1,5 @@
 body {
-	background: url("images\Background.jpg"); /* Links to your background image, which you can also replace with a URL. */
+	background: url("C:\Users\Kyle\OneDrive\Documents\Personal\images\Background.jpg"); /* Links to your background image, which you can also replace with a URL. */
 	background-size: cover; /* Image covers page. */
 	background-repeat: no-repeat; /* Image does not repeat. */
 	background-attachment: fixed; /* Image doesn't move when you scroll up or down. */
