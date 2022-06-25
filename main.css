@@ -24,8 +24,8 @@ h2 {
 	z-index: 100;
 	top:10;
 	bottom: 10;
-	left: 0;
-	right: 0;
+	left: 10;
+	right: 10;
 	margin: auto;
 } 
 
@@ -59,7 +59,7 @@ h2 {
 .cusSticky {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: auto;
 	z-index: 999;
 	}
 
