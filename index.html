@@ -11,9 +11,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3d9119f7c9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+ 
 
     <style>
+
+      body {
+        background: url("Background.jpg"); /* Links to your background image, which you can also replace with a URL. */
+        background-size: cover; /* Image covers page. */
+        background-repeat: no-repeat; /* Image does not repeat. */
+        background-attachment: fixed; /* Image doesn't move when you scroll up or down. */
+        background-position: top;
+        text-align: center;
+        color: white; /* Text color. */
+        font-family: 'Avenir', sans-serif; /* Font: sans-serif included in case browser doesn't support first option. */
+      }
+
+      h1 {
+        font-size: 70px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      /* This just centers the header container vertically on the page. */
+      .container-fluid {
+        
+        position: relative;
+        z-index: 100;
+        top:10;
+        bottom: 10;
+        left: 10;
+        right: 10;
+        margin: auto;
+      } 
+
+      /* Styling for icons. */
+      .fa {
+        color: white;
+        margin: 10px 5px;
+        font-size: 3em !important;
+      }
+      .list-group-mine .list-group-item {
+        background-color: #f1f9fb;
+        border-top: 1px solid #0091b5;
+        border-left-color: #fff;
+        border-right-color: #fff;
+        }
+        
+        .list-group-mine .list-group-item:hover {
+        background-color: #0091b5;
+        }
+
+        .css-shadow {
+
+        width: 275px;
+        height: 275px;
+        border-radius: 50%;
+        border: 2px solid #0dcaf0;
+        filter: drop-shadow(0 0 8px #adb5bd);
+        }
+
+
+      .cusSticky {
+        position: fixed;
+        top: 0;
+        width: auto;
+        z-index: 999;
+        }
+
+      .footer {
+        background-color: black;
+        position: fixed;
+        bottom: 0;
+        width: auto;
+      }
       /* width */
       ::-webkit-scrollbar {
         width: 20px;
