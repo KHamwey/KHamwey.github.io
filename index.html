@@ -36,9 +36,7 @@
 
       /* This just centers the header container vertically on the page. */
       .container-fluid {
-        
         position: relative;
-
         top:10;
         bottom: 10;
         left: 10;
@@ -64,7 +62,6 @@
         }
 
         .css-shadow {
-
         width: 275px;
         height: 275px;
         border-radius: 50%;
@@ -72,6 +69,9 @@
         filter: drop-shadow(0 0 8px #adb5bd);
         }
 
+       .container-sm profile {
+        padding-top: 25px;
+       }
 
       .cusSticky {
         position: fixed;
@@ -85,28 +85,30 @@
         position: fixed;
         bottom: 0;
         width: auto;
-      }
-      /* width */
-      ::-webkit-scrollbar {
-        width: 20px;
-      }
-      
-      /* Track */
-      ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
-        border-radius: 10px;
-      }
-       
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #0091b5; 
-        border-radius: 10px;
-      }
-      
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #0091b5; 
-      }
+        }
+        /* width */
+        ::-webkit-scrollbar {
+          width: 20px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #0091b5; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #0091b5; 
+        }
+
+    
       </style>
   </head>
 
@@ -141,11 +143,10 @@
   </nav>
 
 
-  <div class="container-sm">
+  <div class="container-sm profile">
       <div class="css-shadow border-secondary">
-        <img src="images\Profile Pic.PNG" class="css-shadow" alt="Kyle Hamwey">>
+        <img src="images\Profile Pic.PNG" class="css-shadow" alt="Kyle Hamwey">
           <h4 class="card-title">Kyle Hamwey</h4>
-          <p class="card-text">Skills</p>
       </div>
   </div>
 
