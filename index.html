@@ -28,34 +28,18 @@
         }
       }
 
-              /* width */
-              ::-webkit-scrollbar {
-          width: 20px;
-          background: black; 
-        }
-        
-        /* Track */
-        ::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 5px black; 
-          border-radius: 10px;
-        }
-        
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-          background: #0091b5; 
-          border-radius: 10px;
-        }
-        
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-          background: #0091b5; 
-        }
-
-      .container { 
-          display: flex;
-          flex-wrap: wrap;
+      .grid-container-element { 
+          display: grid; 
+          grid-template-columns: 1fr 1fr; 
+          grid-gap: 10px; 
           border: 1px solid green; 
-          width: auto;
+          max-width: 20%;
+          /*width: auto; */
+      }
+      
+      /* For getting your Grids right */
+    .grid-child-element { 
+          border: 1px solid red; 
       }
 
       .avatar {
@@ -116,7 +100,32 @@
         background-color: black;
         position: center;
         bottom: 0;
-        }    
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+          width: 20px;
+          background: black; 
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px black; 
+          border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #0091b5; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #0091b5; 
+        }
+
+    
       </style>
   </head>
 
@@ -151,13 +160,15 @@
 
 
   <div>
-      <div class="container" style="max-width: 40rem;">
-          <div class="avatar"><img src="images\My project.jpg" alt="Kyle Hamwey"/></div>
+      <div class="float-container">
+        <div class="grid-child-element purple" style="max-width: 40rem;">
+          <div class="avatar"><img src="images\My project.jpg" alt="Kyle Hamwey"/>
+          </div>
+        </div>
       </div>
-  </div>
     
 
-        <div class="container">
+        <div class="float-container">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Profesional Bio</h5>
@@ -169,7 +180,7 @@
       </div>  
     
 
-      <div class="container">
+      <div class="float-container">
             <div class="card">
               <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
               <div class="card-body">
@@ -180,7 +191,7 @@
             </div>
           </div>
 
-          <div class="container">
+          <div class="float-container">
             <div class="card">
               <i class="fa-solid fa-network-wired fa-flip" style="--fa-beat-scale: 2.0;"></i>
               <div class="card-body">
@@ -193,7 +204,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="float-container">
             <div class="card">
               <i class="fa-solid fa-bell fa-shake"></i>
               <div class="card-body">
