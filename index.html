@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3d9119f7c9.js" crossorigin="anonymous"></script>
 
     <style>
 
@@ -55,12 +56,12 @@
       }
 
       body {
-        background: url("images/UNDERCONSTRUCTION.jpg"); /* Links to your background image, which you can also replace with a URL. */
+        background: url(""); /* Links to your background image, which you can also replace with a URL. */
         background-size: cover; /* Image covers page. */
         background-repeat: no-repeat; /* Image does not repeat. */
         background-attachment: fixed; /* Image doesn't move when you scroll up or down. */
         background-position: top;
-        color: wheat; /* Text color. */
+        color: blue; /* Text color. */
         font-family: 'Avenir', sans-serif;/* Font: sans-serif included in case browser doesn't support first option. */
         overflow-x: hidden;
       }
@@ -79,7 +80,7 @@
         display: flex;
         margin: 10px 3px;
         text-align: center;
-        border: 1px solid wheat; 
+        border: 1px solid blue; 
       }
 
       /* Styling for icons. */
@@ -135,10 +136,10 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Kyle Hamwey</a>
       </div>
-      <!--<ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
         <li class="active"><a href="#">About</a></li>
         <li><a href="Education.html">Education</a></li>
-        <li><a href="ProjectManagement.html">Project Management Tools</a></li>  
+        <!--<li><a href="ProjectManagement.html">Project Management Tools</a></li>  
         <li><a href="htmlcss.html">HTML & CSS</a></li>
         <li><a href="JavaScript.js">JavaScript</a></li>
         <li><a href="php.php">PHP</a></li>
@@ -146,21 +147,89 @@
         <li><a href="gtm.html">Google Tag Manager</a></li>
         <li><a href="wp.html">WordPress</a></li>
         <li><a href="Bitnami.html">Bitnami</a></li>
-        <li><a href="vm.html">Virtual Machines</a></li>
-      </ul>-->
-    </div>
-</div>
+        <li><a href="vm.html">Virtual Machines</a></li>-->
+      </ul>
+      <form class="navbar-form navbar-right sticky-top" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+  </nav>
+
+
+
+  <div>
+      <div class="float-container">
+        <div class="grid-child-element purple" style="max-width: 40rem;">
+          <div class="avatar"><img src="images\My project.jpg" alt="Kyle Hamwey"/>
+          </div>
+        </div>
+      </div>
+    
+
         <div class="float-container">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Website is Under Construction</h5>
-              <p class="card-text">I keep switching CSS Libraries and trying different Grid/Flex Systems</p>
-              <!--<p class="card-text"><small class="text-muted">Kyle Hamwey</small></p>-->
+              <h5 class="card-title">Profesional Bio</h5>
+              <p class="card-text">I am an experienced functional industry analyst who drives profitability improvement through strategic technical growth, waste elimination, and quality enhancement. I have a track record of successfully directing the execution of tactical operating plans.</p>
+              <p class="card-text"><small class="text-muted">Kyle Hamwey</small></p>
             </div>
           </div>
         </div>
-        
+      </div>  
+    
 
+      <div class="float-container">
+          <div class="card-group">
+            <div class="card">
+              <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+              <div class="card-body">
+                <h5 class="card-title">Engineering Skills</h5>
+                <p class="card-text">I'M currently a Solutions Engineer on the Systems Operations Team over seeing DNS updates for Go Lives and technical Issues and othe Infastructure related Technologies.</p>
+                <p class="card-text"><small class="text-muted">Last updated: 12/15/2022</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-container">
+            <div class="card-group">
+            <div class="card">
+              <i class="fa-solid fa-network-wired fa-flip" style="--fa-beat-scale: 2.0;"></i>
+              <div class="card-body">
+                <h5 class="card-title">I.T. Managment & Infrasctructure Skills</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-container">
+          <div class="card-group">
+            <div class="card">
+              <i class="fa-solid fa-bell fa-shake"></i>
+              <div class="card-body">
+                <h5 class="card-title">Self & Time Management</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="card">
+      <div class="card-header">
+        Quote
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>A jack of all trades is a master of none, but oftentimes better than a master of one.</p>
+          <footer class="blockquote-footer">Robert Greene<cite title="Source Title">1592 booklet Greene's Groats-Worth of Wit</cite></footer>
+        </blockquote>
+      </div>
     
   </body>
     
@@ -171,6 +240,7 @@
             <div class="icons">
 
                   <a href="mailto: <hamweykyle@ymail.com>">
+
                     <i class="fa fa-envelope" title="Email"></i>
                   </a>
                   <a href="https://github.com/KHamwey">
@@ -182,6 +252,6 @@
               </div>
             </div>
           </div>
-        </div>
+      </div>
     </footer>
 
