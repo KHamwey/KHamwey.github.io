@@ -62,6 +62,7 @@
       h2 {
         font-size: 40px;
       }
+
       /* Styling for icons. */
       .fa {
         color: #0091b5;
@@ -114,17 +115,16 @@
   
   <nav class="navbar navbar-inverse cusSticky">
   
-      <div class="navbar-header" style="position: fixed; width: 100%;">
+      <div class="navbar-header" style="display: block; position: fixed;">
         <a class="navbar-brand" href="#">Kyle Hamwey</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                <a href="#">About</a></li>
+                <li><a href="#">Communication</a></li>
+                <li><a href="#">Technical</a></li>  
+                <li><a href="#">Engineering</a></li>
+            </ul>
       </div>
-
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#">About</a></li>
-          <li><a href="#">Communication</a></li>
-          <li><a href="#">Technical</a></li>  
-          <li><a href="#">Engineering</a></li>
-      </ul>
       
       <!--<form class="navbar-form navbar-right sticky-top" action="/action_page.php">
         <div class="form-group">
@@ -231,14 +231,14 @@
               <a href="https://www.linkedin.com/in/kyle-h-b856b925/"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
-          <div class="col-md-4">
+          <!--<div class="col-md-4">
             <ul class="footer-links">
               <li><a href="#">Home</a></li>
               <li><a href="#">Communication</a></li>
               <li><a href="#">Technical</a></li>
               <li><a href="#">Engineering</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
