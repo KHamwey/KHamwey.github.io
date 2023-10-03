@@ -62,18 +62,6 @@
       h2 {
         font-size: 40px;
       }
-
-      nav {
-        display: block;
-        background-color: black;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-      }
-
-      jumbotron 
-
       /* Styling for icons. */
       .fa {
         color: #0091b5;
@@ -126,11 +114,11 @@
   
   <nav class="navbar navbar-inverse cusSticky">
   
-      <div class="navbar-header">
+      <div class="navbar-header" style="position: fixed; width: 100%;">
         <a class="navbar-brand" href="#">Kyle Hamwey</a>
       </div>
 
-      <ul class="nav navbar-nav" style="position: fixed; width: 100%;">
+      <ul class="nav navbar-nav">
         <li class="active">
           <a href="#">About</a></li>
           <li><a href="#">Communication</a></li>
@@ -157,7 +145,7 @@
     </div>
     
           <!-- This is the Bio Block and will need to be edited seperatelty -->
-          <div class="jumbotron" style="background-color: aliceblue;">
+          <div class="jumbotron" style="background-color: aliceblue; padding: 20px;">
             <div class="container">
               <h4 class="display-4">Profesional Bio</h4>
                   <p class="lead">As a seasoned Systems Engineer with over 10 years of experience in the tech industry, I bring a wealth of knowledge and expertise to any project or team.<br>
@@ -215,7 +203,7 @@
           
           <!-- This is the Quote Block and will need to be edited seperatelty -->
           <div class="card">
-            <div class="card-header">
+            <div class="card-header" style="padding: 20px;">
               My Favorite Quote
             </div>
             <div class="card-body">
@@ -236,7 +224,7 @@
             <p>&copy; 2023 Kyle Hamwey</p>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-lg-6">
             <div class="social-icons">
               <a href="mailto: hamweykyle@ymail.com"><i class="fa fa-envelope"></i></a>
               <a href="https://github.com/KHamwey"><i class="fa fa-github"></i></a>
