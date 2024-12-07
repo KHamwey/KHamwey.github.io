@@ -62,16 +62,33 @@
         padding: 15px;            /* Add padding to create spacing between border and card */
         }
 
-        .wider-img {
-        width: 200px;
-        height: 200px;              /* Make the image span the card's width */
-        height: auto;              /* Maintain the image's aspect ratio */
-        object-fit: cover;         /* Ensures proper scaling of images */
-        }
+    /* Ensure all images are the same size */
+    .wider-img {
+    width: 200px; /* Consistent width for all images */
+    height: 200px; /* Consistent height */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
+    border: 4px solid #0091b5; /* Add border around the image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    display: block; /* Ensure proper spacing/alignment */
+    margin: 0 auto; /* Center the images inside their column */
+    }
 
-        .row.d-flex {
-        justify-content: space-between; /* Spreads the divs with space between them */
-        }
+    /* Spread images apart */
+    .row.d-flex {
+    justify-content: space-evenly; /* Space images evenly across the row */
+    gap: 20px; /* Add spacing between columns if needed */
+    }
+
+    /* Optional: Add padding to columns for better spacing */
+    .col-md-4 {
+    padding: 10px;
+    }
+
+    /* Align the container to the center and maintain responsiveness */
+    .container.text-center {
+    max-width: 1200px; /* Adjust based on preference */
+    margin: 0 auto; /* Center the container on the page */
+    }
 
       body {
         background-image: url( "../images/yrsoX.jpg"); /* Links to your background image, which you can also replace with a URL. */
@@ -187,41 +204,35 @@
 
           <div class="container text-center">
             <div class="row d-flex justify-content-between">
-              <div class="col-md-4 outer-border">
-                <div class="card">
-                  <img class="card-img-top wider-img" src="/images/6212132.svg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Medium</h5>
-                    <i class="fa-solid fa-satellite-dish fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
-                    <a href="https://medium.com/@hamweykyle" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
-                  </div>
+              <div class="col-md-4">
+                <img class="wider-img" src="/images/6212132.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Medium</h5>
+                  <i class="fa-solid fa-satellite-dish fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
+                  <a href="https://medium.com/@hamweykyle" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
                 </div>
               </div>
           
               <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top wider-img" src="/images/34919.svg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Portfolio Site</h5>
-                    <i class="fa-solid fa-code fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
-                    <a href="https://www.kylehamwey.com" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
-                  </div>
+                <img class="wider-img" src="/images/34919.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Site</h5>
+                  <i class="fa-solid fa-code fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
+                  <a href="https://www.kylehamwey.com" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
                 </div>
               </div>
           
-              <div class="col-md-4 outer-border">
-                <div class="card">
-                  <img class="card-img-top wider-img" src="/images/17828.svg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Business</h5>
-                    <i class="fa-solid fa-terminal fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
-                    <a href="https://www.ktrlcomputers.com/" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
-                  </div>
+              <div class="col-md-4">
+                <img class="wider-img" src="/images/17828.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Business</h5>
+                  <i class="fa-solid fa-terminal fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
+                  <a href="https://www.ktrlcomputers.com/" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
                 </div>
               </div>
             </div>
           </div>
-    
+          
           <!-- This is the Bio Block and will need to be edited seperatelty -->
           <div class="jumbotron">
             <div class="container">
