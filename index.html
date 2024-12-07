@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <title>Kyle Hamwey - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images\favicon.ico">
     <meta charset="utf-8">
@@ -12,260 +12,262 @@
     <script src="https://kit.fontawesome.com/3d9119f7c9.js" crossorigin="anonymous"></script>
 
     <style>
-        @keyframes float {
-            0% {
-                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-                transform: translatey(0px);
-            }
-            50% {
-                box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-                transform: translatey(-20px);
-            }
-            100% {
-                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-                transform: translatey(0px);
-            }
-        }
 
-        .grid-container-element {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
-            border: 1px solid green;
-            max-width: 20%;
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
         }
-
-        .grid-child-element {
-            border: 1px solid red;
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+          transform: translatey(-20px);
         }
-
-        .avatar {
-            height: 225px;
-            border-radius: 50%;
-            border: 3px solid #0091b5;
-            filter: drop-shadow(0 0 8px #adb5bd);
-            transform: translatey(0px);
-            overflow: hidden;
-            animation: float 6s ease-in-out infinite;
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
         }
+      }
+      
+      /* For getting your Grids right
+    .grid-child-element { 
+          border: 1px solid red; 
+      } */
 
-        body {
-            background: url(""); /* Links to your background image, which you can also replace with a URL. */
-            background-size: cover; /* Image covers page. */
-            background-repeat: no-repeat; /* Image does not repeat. */
-            background-attachment: fixed; /* Image doesn't move when you scroll up or down. */
-            background-position: top;
-            color: blue; /* Text color. */
-            font-family: 'Avenir', sans-serif; /* Font: sans-serif included in case browser doesn't support first option. */
-            overflow-x: hidden;
-            padding-top: 50px; /* Adjust based on header height */
-            padding-bottom: 50px; /* Adjust based on footer height */
-        }
+      .avatar {
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #0091b5;
+        filter: drop-shadow(0 0 8px #adb5bd);
+        transform: translatey(0px);
+        overflow: hidden;
+        animation: float 6s ease-in-out infinite;
+        max-width: 150px;
+      }
 
-        h1 {
-            font-size: 70px;
-        }
+      .jumbotron {
+        background-color: aliceblue;
+        max-width: 1500px;
+      }
 
-        h2 {
-            font-size: 40px;
-        }
+      .card-img-top {
+        width: 200px;
+        height: 200px;
+      }
 
-        .card-group {
-            background-color: grey;
-            max-width: 20em;
-            display: flex;
-            margin: 10px 3px;
-            text-align: center;
-            border: 1px solid blue;
-        }
+      body {
+        background-image: url( "../images/lightbulgbg.jpg"); /* Links to your background image, which you can also replace with a URL. */
+        background-size: cover; /* Image covers page. */
+        background-repeat: no-repeat; /* Image does not repeat. */
+        background-attachment: fixed; /* Image doesn't move when you scroll up or down. */
+        background-position: top;
+        color: black; /* Text color. */
+        font-family: 'Avenir', sans-serif;/* Font: sans-serif included in case browser doesn't support first option. */
+        overflow-x: hidden;
+        padding-bottom: 20px;
+      }
 
-        .fa {
-            color: white;
-            margin: 10px 3px;
-            font-size: 3em !important;
-        }
+      h1 {
+        font-size: 70px;
+      }
 
-        .fa-solid {
-            color: white;
-            margin: 10px 3px;
-            font-size: 3em !important;
-        }
+      h2 {
+        font-size: 40px;
+      }
 
-        .footer {
-            background-color: black;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+      /* Styling for icons. */
+      .fa {
+        color: #0091b5;
+        margin: 10px 3px;
+        font-size: 3em !important;
+      }
+
+      .fa-solid {
+        color: #0091b5;
+        margin: 10px 3px;
+        font-size: 3em !important;
+      }
+
+      .footer {
+        background-color: black;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
         }
 
         /* width */
         ::-webkit-scrollbar {
-            width: 20px;
-            background: black;
+          width: 5px;
+          background: black; 
         }
-
+        
         /* Track */
         ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px black;
-            border-radius: 10px;
+          box-shadow: inset 0 0 5px black; 
+          border-radius: 5px;
         }
-
+        
         /* Handle */
         ::-webkit-scrollbar-thumb {
-            background: #0091b5;
-            border-radius: 10px;
+          background: #0091b5; 
+          border-radius: 5px;
         }
-
+        
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
-            background: #0091b5;
+          background: #0091b5; 
         }
 
-        .navbar.cusSticky {
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
+    
+      </style>
+  </head>
 
-        /* Centering .social-icons */
-        .col-lg-6 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Adjust as needed */
-        }
-
-        .social-icons {
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-
-    <nav class="navbar navbar-inverse cusSticky">
-        <div class="navbar-header">
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
             <a class="navbar-brand" href="#">Kyle Hamwey</a>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                    <a href="#">About</a></li>
+                    <li><a href="#">Communication</a></li>
+                    <li><a href="#">Technical</a></li>  
+                    <li><a href="#">Engineering</a></li>
+                </ul>
+              </div>
+          </div>
+      
+      <!--<form class="navbar-form navbar-right sticky-top" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">About</a></li>
-            <li><a href="Education.html">Education</a></li>
-        </ul>
-        <form class="navbar-form navbar-right" action="/action_page.php">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search" name="search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      -->
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="social-icons">
-                    <a href="mailto:hamweykyle@ymail.com">
-                        <i class="fa fa-envelope" title="Email"></i>
-                    </a>
-                    <a href="https://github.com/KHamwey">
-                        <i class="fa fa-github" title="Github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kyle-h-b856b925/">
-                        <i class="fa fa-linkedin" title="LinkedIn"></i>
-                    </a>
-                </div>
-            </div>
+    <div class="float-container" style="padding-top: 75px;">
+      <div class="grid-child-element purple">
+        <div class="avatar"><img src= "/images/Backgroungimg_150x150.jpeg" alt="Kyle Hamwey"/>
         </div>
+      </div>
     </div>
 
-    <div class="float-container">
-        <div class="grid-child-element purple" style="max-width: 20rem;">
-            <div class="avatar"><img src="images\My project.jpg" alt="Kyle Hamwey" />
-            </div>
-        </div>
-    </div>
 
-    <div class="float-container">
-        <div class="card">
+    <div class="container text-center" style=" float:right; right:0; padding-left: 350px;">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="/images/github.svg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Professional Bio</h5>
-                <p class="card-text">I am an experienced functional industry analyst who drives profitability improvement through strategic technical growth, waste elimination, and quality enhancement. I have a track record of successfully directing the execution of tactical operating plans.</p>
-                <p class="card-text"><small class="text-muted">Kyle Hamwey</small></p>
+              <h5 class="card-title">Static Homepage</h5>
+              <i class="fa-solid fa-code-branch fa-fade" style= "--fa-beat-scale: 1.0;"></i><br>
+              <p class="card-text">I've hosted my Homepage in a Github repo as a Static site. This way I will always have an introductory page avialble online for free.</p>
+              <a href="https://github.com/KHamwey/KHamwey.github.io" class="btn btn-primary" style="background-color: #0091b5;">Homepage Repo</a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="float-container">
-        <div class="card-group">
-            <div class="card">
-                <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Engineering Skills</h5>
-                    <p class="card-text">I'M currently a Solutions Engineer on the Systems Operations Team overseeing DNS updates for Go Lives and technical Issues and other Infrastructure related Technologies.</p>
-                    <p class="card-text"><small class="text-muted">Last updated: 12/15/2022</small></p>
+          <!-- This is the Bio Block and will need to be edited seperatelty -->
+          <div class="jumbotron">
+            <div class="container">
+              <h4 class="display-4">Profesional Bio</h4>
+                  <p class="lead">As a seasoned Systems Engineer with over 10 years of experience in the tech industry, I bring a wealth of knowledge and expertise to any project or team.<br>
+                    Throughout my career, I have honed my skills in various areas and I am adept at leveraging business tools, proficient in database languages, experienced in web development, knowledgeable in linux and awk commands, and well-versed in call center methodologies.
+                    My commitment to professional growth ensures that I am continuously expanding my skill set to stay up-to-date with the latest industry trends and technologies.
+                    I bring a proactive and solutions-oriented mindset to any project, and I am eager to contribute my expertise to drive success for my organization.
+                    </p>
+            </div>
+          </div>
+
+          <!-- This is the Bio Block and will need to be edited seperatelty -->
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="/images/6212132.svg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Communication</h5>
+                    <i class="fa-solid fa-satellite-dish fa-flip" style= "--fa-beat-scale: 1.0;"></i><br>
+                    <!--<p class="card-text">I consider myself to be an advanced or expert level user when it comes to business tools such as Microsoft Office and Google Workspace.
+                      I have utilized these tools extensively to streamline processes, improve collaboration, and optimize productivity in previous roles.</p>-->
+                    <a href="#" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              </div>
 
-    <div class="float-container">
-        <div class="card-group">
-            <div class="card">
-                <i class="fa-solid fa-network-wired fa-flip" style="--fa-beat-scale: 2.0;"></i>
-                <div class="card-body">
-                    <h5 class="card-title">I.T. Management & Infrastructure Skills</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="/images/34919.svg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Engineering</h5>
+                    <i class="fa-solid fa-code fa-flip" style= "--fa-beat-scale: 1.0;"></i><br>
+                    <!--<p class="card-text">LINUX and AWK commands are second nature to me, and I am well-versed in utilizing them to troubleshoot, automate tasks, and improve efficiency in system administration.<br>
+                      Furthermore, I am currently expanding my skill set by diving into the realm of AWS cloud.
+                      With my dedication and passion for learning, I am actively working towards obtaining AWS certifications to complement my existing expertise.</p>-->
+                    <a href="#" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              </div>
 
-    <div class="float-container">
-        <div class="card-group">
-            <div class="card">
-                <i class="fa-solid fa-bell fa-shake"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Self & Time Management</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="/images/17828.svg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Technical</h5>
+                    <i class="fa-solid fa-terminal fa-flip" style="--fa-beat-scale: 1.0;"></i><br>
+                    <!--<p class="card-text">HTML, CSS, Python and JavaScript experience is extensive, having implemented numerous web projects throughout my career.
+                      I possess a deep understanding of web development principles and have successfully created user-friendly and visually appealing websites.</p>-->
+                    <a href="#" class="btn btn-primary" style="background-color: #0091b5;">Click Here</a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            Quote
-        </div>
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>A jack of all trades is a master of none, but oftentimes better than a master of one.</p>
+          </div>
+          
+          <!-- This is the Quote Block and will need to be edited seperatelty -->
+          <div class="card"  style="padding-bottom: 10px;">
+            <div class="card-header">
+              My Favorite Quote
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>A jack of all trades is a master of none, but oftentimes better than a master of one.</p>
                 <footer class="blockquote-footer">Robert Greene<cite title="Source Title">1592 booklet Greene's Groats-Worth of Wit</cite></footer>
-            </blockquote>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="navbar navbar-inverse navbar-fixed-bottom">
-            <div class="navbar-inner">
-                <div class="container">
-                    <div class="icons">
-                        <a href="mailto:hamweykyle@ymail.com">
-                            <i class="fa fa-envelope" title="Email"></i>
-                        </a>
-                        <a href="https://github.com/KHamwey">
-                            <i class="fa fa-github" title="Github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kyle-h-b856b925/">
-                            <i class="fa fa-linkedin" title="LinkedIn"></i>
-                        </a>
-                    </div>
-                </div>
+              </blockquote>
             </div>
-        </div>
-    </footer>
-
+          </div>
 </body>
 
-</html>
+  <!-- This is the Footer Block and will need to be edited seperatelty -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; 2023 Kyle Hamwey</p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="social-icons">
+              <a href="mailto: hamweykyle@ymail.com"><i class="fa fa-envelope"></i></a>
+              <a href="https://github.com/KHamwey"><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/kyle-h-b856b925/"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <!--<div class="col-md-4">
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Communication</a></li>
+              <li><a href="#">Technical</a></li>
+              <li><a href="#">Engineering</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+    
