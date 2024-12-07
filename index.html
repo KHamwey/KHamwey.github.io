@@ -8,12 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3d9119f7c9.js" crossorigin="anonymous"></script>
 
     <style>
 
 @media (max-width: 750px) {
+
+    .d-flex {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center them horizontally */
+    }
+
+    .d-flex h1 {
+        margin-left: 0; /* Remove horizontal margin */
+        margin-top: 10px; /* Add vertical spacing */
+        text-align: center; /* Optional: Center align text */
+    }
+
    .avatar {
      height: 200px;
      width: 200px;
@@ -137,6 +150,13 @@
         margin: 0 auto; /* Center the container on the page */
         }
 
+    .kyle-name {
+        font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your font */
+        font-size: 2rem; /* Adjust size as needed */
+        font-weight: bold; /* Adjust weight */
+        color: #0091b5; /* Optional: Customize the color */
+        }
+
       body {
         background-image: url( "../images/pexels-rovenimages-com-344613-949587.jpg"); /* Links to your background image, which you can also replace with a URL. */
         background-size: cover; /* Image covers page. */
@@ -220,7 +240,7 @@
           <div class="avatar">
             <img src="/images/profile-pic.png" alt="Kyle Hamwey" />
           </div>
-          <h1 style="margin-left: 20px; color: white;">Kyle Hamwey</h1>
+          <h1 class="kyle-name" style="margin-left: 20px;">Kyle Hamwey</h1>
         </div>
       </div>
   
